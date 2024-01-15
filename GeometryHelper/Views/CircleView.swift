@@ -18,8 +18,13 @@ struct CircleView: View {
                 .resizable()
                 .frame(maxHeight: 300)
            
-            Slider(value: $currentCircle.radius, in: 0...100)
-                .padding()
+            HStack {
+                Text("0")
+                    .padding(.leading)
+                Slider(value: $currentCircle.radius, in: 0...100)
+                Text("100")
+                    .padding(.trailing)
+            }
             
             Text("Radius")
                 .padding(.leading)
