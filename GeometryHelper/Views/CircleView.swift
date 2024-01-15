@@ -15,7 +15,11 @@ struct CircleView: View {
     var body: some View {
         Text("\(radius)")
             .font(.largeTitle)
+        
+        Slider(value: $radius, in: 0...100)
+            .padding()
     }
+    
 }
 
 #Preview {
