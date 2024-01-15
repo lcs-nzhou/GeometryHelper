@@ -25,6 +25,7 @@ struct CircleView: View {
                 Text("100")
                     .padding(.trailing)
             }
+            .padding(.bottom)
             
             Text("Radius")
                 .padding(.leading)
