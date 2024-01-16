@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ConeView: View {
     //MARK: Stored properties
-    @State var currentCone = cone(radius: 10.0, height: 20.0, slant: 20.0)
+    @State var currentCone = cone(radius: 10.0, height: 20.0)
     
     //MARK: Computed properties
     var body: some View {
@@ -28,13 +28,6 @@ struct ConeView: View {
                 Text("0")
                     .padding(.leading)
                 Slider(value: $currentCone.height, in: 0...100)
-                Text("100")
-                    .padding(.trailing)
-            }
-            HStack {
-                Text("0")
-                    .padding(.leading)
-                Slider(value: $currentCone.slant, in: 0...100)
                 Text("100")
                     .padding(.trailing)
             }

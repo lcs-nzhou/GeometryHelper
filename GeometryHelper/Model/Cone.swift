@@ -11,8 +11,11 @@ struct cone {
     //MARK: stored properties
     var radius : Double
     var height : Double
-    var slant : Double
+    
     //MARK: computed properties
+    var slant : Double {
+        return (radius * radius + height * height) .squareRoot()
+    }
     var surfaceArea : Double {
         return radius * radius * Double.pi + Double.pi * radius * slant
     }
