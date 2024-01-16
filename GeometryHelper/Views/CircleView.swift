@@ -17,7 +17,6 @@ struct CircleView: View {
             Image("CircleImage")
                 .resizable()
                 .frame(maxHeight: 300)
-           
             HStack {
                 Text("0")
                     .padding(.leading)
@@ -30,7 +29,7 @@ struct CircleView: View {
             Text("Radius")
                 .padding(.leading)
                 .bold()
-            Text("\(currentCircle.radius)")
+            Text("\(currentCircle.radius.roundedTo(precision: 1))")
                 .padding(.bottom)
                 .padding(.leading)
                 
@@ -60,6 +59,26 @@ struct CircleView: View {
     }
     
 }
+
+extension Double {
+    
+    // UInt is an unsigned integer, which means a negative precision value
+    // cannot be provided (that would not be logical, so it should not be allowed)
+    func roundedTo(precision: UInt) -> Double {
+
+        // Establish the multiplier (10, 100, 1000, etc based on precision value provided)
+        let multiplier = pow(10, Double(precision))
+        
+        // Move decimal place to the right (by multiplying).
+        // Round to nearest whole number.
+        // Then move decimal place back to the left.
+        let roundedValue = (self * multiplier).rounded() / multiplier
+        
+        // Return the rounded value
+        return roundedValue
+    }
+}
+
 
 #Preview {
     CircleView()
