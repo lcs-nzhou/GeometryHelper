@@ -17,6 +17,9 @@ struct ConeView: View {
             Image("ConeImage")
                 .resizable()
                 .frame(maxHeight: 300)
+            Text("Radius")
+                .padding(.leading)
+                .bold()
             HStack {
                 Text("0")
                     .padding(.leading)
@@ -24,6 +27,9 @@ struct ConeView: View {
                 Text("100")
                     .padding(.trailing)
             }
+            Text("Height")
+                .bold()
+                .padding(.leading)
             HStack {
                 Text("0")
                     .padding(.leading)
