@@ -43,7 +43,7 @@ struct CircleView: View {
             Text("Perimeter")
                 .padding(.leading)
                 .bold()
-            Text("\(currentCircle.perimeter)")
+            Text("\(currentCircle.perimeter.roundedTo(precision: 1))")
                 .padding(.bottom)
                 .padding(.leading)
                 
@@ -57,8 +57,8 @@ struct CircleView: View {
         }
         
     }
-    
 }
+
 
 extension Double {
     
@@ -78,6 +78,7 @@ extension Double {
         return roundedValue
     }
 }
+
 
 
 #Preview {
