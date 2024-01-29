@@ -39,39 +39,11 @@ struct ConeView: View {
             }
             .padding(.bottom)
             
-            Text("Radius")
-                .padding(.leading)
-                .bold()
-            Text("\(currentCone.radius)")
-                .padding(.bottom)
-                .padding(.leading)
-                
-            Text("Height")
-                .padding(.leading)
-                .bold()
-            Text("\(currentCone.height)")
-                .padding(.bottom)
-                .padding(.leading)
-                
-            Text("Slant")
-                .padding(.leading)
-                .bold()
-            Text("\(currentCone.slant)")
-                .padding(.bottom)
-                .padding(.leading)
-                
-            Text("Surface Area")
-                .padding(.leading)
-                .bold()
-            Text("\(currentCone.surfaceArea)")
-                .padding(.leading)
-                .padding(.bottom)
-            
-            Text("Volume")
-                .padding(.leading)
-                .bold()
-            Text("\(currentCone.volume)")
-                .padding(.leading)
+            TextView(name: "Radius", number: currentCone.radius)
+            TextView(name: "Height", number: currentCone.height)
+            TextView(name: "Slant", number: currentCone.slant)
+            TextView(name: "Surface Area", number: currentCone.surfaceArea)
+            TextView(name: "Volume", number: currentCone.volume)
             
             Spacer()
         }

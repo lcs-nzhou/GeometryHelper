@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7474FBDA2B56EBDE00354B7A /* Cone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7474FBD92B56EBDE00354B7A /* Cone.swift */; };
 		7474FBDC2B56ED1D00354B7A /* ConeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7474FBDB2B56ED1D00354B7A /* ConeView.swift */; };
+		7474FC692B67ECDB00354B7A /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7474FC682B67ECDB00354B7A /* TextView.swift */; };
 		7483C9442B556F7E004E5292 /* GeometryHelperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7483C9432B556F7E004E5292 /* GeometryHelperApp.swift */; };
 		7483C9482B556F81004E5292 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7483C9472B556F81004E5292 /* Assets.xcassets */; };
 		7483C94B2B556F81004E5292 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7483C94A2B556F81004E5292 /* Preview Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		7474FBD92B56EBDE00354B7A /* Cone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cone.swift; sourceTree = "<group>"; };
 		7474FBDB2B56ED1D00354B7A /* ConeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConeView.swift; sourceTree = "<group>"; };
+		7474FC682B67ECDB00354B7A /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		7483C9402B556F7E004E5292 /* GeometryHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeometryHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7483C9432B556F7E004E5292 /* GeometryHelperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryHelperApp.swift; sourceTree = "<group>"; };
 		7483C9472B556F81004E5292 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			children = (
 				7483C9532B55705C004E5292 /* CircleView.swift */,
 				7474FBDB2B56ED1D00354B7A /* ConeView.swift */,
+				7474FC682B67ECDB00354B7A /* TextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				7483C9542B55705C004E5292 /* CircleView.swift in Sources */,
 				7483C9442B556F7E004E5292 /* GeometryHelperApp.swift in Sources */,
 				7474FBDA2B56EBDE00354B7A /* Cone.swift in Sources */,
+				7474FC692B67ECDB00354B7A /* TextView.swift in Sources */,
 				7474FBDC2B56ED1D00354B7A /* ConeView.swift in Sources */,
 				7483C9582B557250004E5292 /* Circle.swift in Sources */,
 			);
